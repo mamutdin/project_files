@@ -20,7 +20,8 @@ def cooking(file:str):
                 cook_book[name_meal] = cook_book[name_meal] + [dict_ingr]
             f.readline()
     return cook_book
-# print(cooking('Cookbook.txt'))
+
+print(cooking('Cookbook.txt'))
 
 def get_shop_list_by_dishes(dishes, person_count):
     dict_ = cooking('Cookbook.txt')
@@ -38,6 +39,10 @@ def get_shop_list_by_dishes(dishes, person_count):
                     ingredients[a] = sorted_ingr
                 else:
                     ingredients[a]['quantity'] += sorted_ingr['quantity']
-    return ingredients
+    return print(ingredients)
 
 print(get_shop_list_by_dishes(['Фахитос', 'Омлет'], 2))
+
+
+
+
